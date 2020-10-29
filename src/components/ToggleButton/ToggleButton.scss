@@ -1,0 +1,34 @@
+.fakeToggleButton {
+  display: block;
+  position: relative;
+  left: 5px;
+  top: 16px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '\2713';
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+    color: rgb(93, 194, 175);
+    opacity: 0;
+  }
+}
+
+.toggleButton {
+  display: none;
+
+  &:checked + .fakeToggleButton::before {
+    opacity: 1;
+  }
+
+  &:checked + .fakeToggleButton {
+    border: 2px solid rgb(93, 194, 175);
+  }
+}

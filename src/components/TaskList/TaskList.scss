@@ -1,0 +1,36 @@
+.main {
+  border-top: 1px solid #e6e6e6;
+}
+
+.taskText {
+  width: 100%;
+  padding: 16px 16px 16px;
+}
+
+.crossText {
+  width: 100%;
+  padding: 16px 16px 16px;
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease-in-out;
+}
+
+.card {
+  position: relative;
+}
+
+.deleteButton {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  fill: #cc9a9a;
+  opacity: 0;
+
+  &:hover {
+    fill: #af5b5e;
+  }
+}
+
+.card:hover .deleteButton {
+  opacity: 1;
+}

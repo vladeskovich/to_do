@@ -1,0 +1,25 @@
+.fakeArrow {
+  font-size: 22px;
+  color: #e6e6e6;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 22px;
+  left: 18px;
+  transform: rotate(90deg);
+}
+
+.fakeArrowChecked {
+  font-size: 22px;
+  color: #737373;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 22px;
+  left: 18px;
+  transform: rotate(90deg);
+}
+
+.toggleButton {
+  display: none;
+}
